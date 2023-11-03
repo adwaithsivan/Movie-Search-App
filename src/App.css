@@ -1,0 +1,42 @@
+body{
+  background: #141411;
+  color: aliceblue;
+}
+.movie-app{
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+#topbar{
+  height: 6rem;
+  background-color: #222222;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  text-transform: uppercase;
+}
+.image-container{
+  position: relative;
+  transition: transform 0.2s;
+}
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.image-container:hover .overlay{
+  opacity: 1;
+}
+.overlay{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+#favouritebar{
+  margin-top: 2rem;
+  padding-left: 5rem;
+}
